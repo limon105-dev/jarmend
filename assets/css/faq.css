@@ -1,0 +1,142 @@
+/* faq section css start */
+.faq-page-banner {
+    background-image: url("../images/common-section-banner.jpg");
+}
+
+.faq-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.faq-content {
+    width: 40%;
+}
+
+.faq-content-title {
+    text-transform: uppercase;
+}
+
+.faq-content-text {
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    font-family: var(--heading-font);
+}
+
+.faq-content .btn {
+    margin: 20px 0 0 0;
+}
+
+.faq-accordion {
+    width: 40%;
+}
+
+.faq-accordion-item:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.faq-accordion-item {
+    padding: 0 10px 0 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.faq-accordion-item .item-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.faq-accordion-item .item-title-wrapper .item-title {
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: ease .3s;
+    font-weight: 700;
+    user-select: none;
+}
+
+.faq-accordion-item.active .item-title-wrapper .item-title {
+    color: var(--brand-color);
+}
+
+.faq-accordion-item.active .item-title-wrapper .icon .plus-icon {
+    display: none;
+    transition: ease .3s;
+}
+
+.faq-accordion-item .item-title-wrapper .icon .plus-icon i,
+.faq-accordion-item .item-title-wrapper .icon .minus-icon i {
+    font-size: 16px;
+    color: var(--btn-color);
+}
+
+.faq-accordion-item .item-title-wrapper .icon .minus-icon {
+    display: none;
+}
+
+.faq-accordion-item.active .item-title-wrapper .icon .minus-icon {
+    display: block;
+    color: var(--brand-color);
+}
+
+.faq-accordion-item-content {
+    padding: 0 15px 15px 0;
+    display: none;
+}
+
+.faq-accordion-item-content ul {
+    margin-left: 18px;
+}
+
+.faq-accordion-item-content ul li {
+    list-style-type: disc;
+    margin: 0 0 10px 0;
+}
+
+.faq-accordion-item-content ul li:last-child {
+    margin: 0;
+}
+
+.faq-accordion-item-content ul li p,
+.faq-accordion-item-content .content p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product-accordion-item-content .content {
+    margin: 10px 0 0 0;
+}
+
+/* faq section css end */
+
+@media only screen and (max-width:992px) {
+    /* faq section css start */
+    .faq-wrapper {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .faq-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .faq-accordion {
+        width: 100%;
+    }
+    /* faq section css end */
+}
+
+@media only screen and (max-width: 575px) {
+    /* faq section css start */
+    .faq-accordion-item .item-title-wrapper .item-title {
+        font-size: 16px;
+    }
+
+    .faq-accordion-item .item-title-wrapper .icon .plus-icon i, .faq-accordion-item .item-title-wrapper .icon .minus-icon i {
+        font-size: 14px;
+    }
+    /* faq section css end */
+}

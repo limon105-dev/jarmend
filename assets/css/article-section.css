@@ -1,0 +1,77 @@
+/* article-section css start */
+.article-section .section-heading {
+    color: var(--black);
+}
+
+.article-content-wrapper {
+    padding: 20px 15px;
+    border: 1px solid var(--border-color);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.article-content {
+    margin: 0 0 15px 0;
+}
+
+.article-content:last-child {
+    margin: 0;
+}
+
+.article-content p,
+.article-content strong {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.article-content p:last-child {
+    margin: 0;
+}
+
+.article-content strong {
+    display: block;
+}
+
+.article-content ul li{
+    margin: 0 0 5px 0;
+}
+
+.article-content ul li:last-child{
+    margin: 0;
+}
+
+.article-content.privacy-policy-item {
+    text-align: center;
+}
+
+.payment-img {
+    max-width: 286px;
+    margin: 50px auto 0;
+}
+
+.brand-icon {
+    max-width: 35px;
+    margin: 50px auto 0;
+}
+
+/* article-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* article-section css start */
+    .article-content-wrapper {
+        padding: 15px 15px;
+    }
+
+    .payment-img {
+        margin: 20px auto 0;
+    }
+
+    .brand-icon {
+        margin: 20px auto 0;
+    }
+
+    /* article-section css end */
+}

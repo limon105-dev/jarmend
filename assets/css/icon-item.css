@@ -1,0 +1,110 @@
+.icon-item-section {
+    padding: 50px 0;
+    background-color: var(--section-bg);
+}
+
+.icon-items {
+    display: grid;
+    gap: 40px 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(250px, 300px));
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item-img {
+    max-width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.icon-item-img img {
+    object-fit: contain;
+}
+
+.icon-item-content {
+    margin: 10px 0 0 0;
+}
+
+.icon-item-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.icon-item-text {
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    line-height: 20px;
+}
+
+.icon-item-btn {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item-btn .btn {
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.icon-item-btn .secondary-btn {
+    border-color: var(--brand-color);
+}
+
+.icon-item-section.contact-item-section {
+    padding-bottom: 0;
+    background-color: var(--white);
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* icon-item section css start */
+    .icon-items {
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(300px, 300px);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+        scrollbar-width: none;
+    }
+
+    /* icon-item section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* icon-item section css start */
+    .icon-item-section.contact-item-section {
+        padding-bottom: 30px;
+    }
+
+    .icon-item-section {
+        padding: 30px 0;
+    }
+
+    .icon-item-btn .btn {
+        width: 100%;
+        padding: 12px 5px;
+    }
+
+    .icon-item-content {
+        margin: 5px 0 0 0;
+    }
+
+    .icon-item-text {
+        margin: 5px 0 0 0;
+    }
+
+    .icon-item-btn {
+        margin: 10px 0 0 0;
+    }
+
+    /* icon-item section css end */
+}

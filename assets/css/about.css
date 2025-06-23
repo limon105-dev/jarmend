@@ -1,0 +1,222 @@
+/* about-section css start */
+.about-page-banner {
+    background-image: url("../images/about-common-banner-2.jpg");
+}
+
+.banner-text-section1 {
+    background-image: url("../images/grid-banner-item-img1.jpg");
+}
+
+.about-banner-text-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 80px 0 0 0;
+}
+
+.about-banner-text-section .banner-text-content-wrap {
+    max-width: 700px;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.about-banner-text-section .banner-text-content-title {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.about-banner-text-section .banner-text-content-title-text {
+    color: var(--white);
+    margin: 10px 0 0 0;
+}
+
+.banner-text-section.about-banner-text-section2 {
+    margin: 0;
+}
+
+section.about-banner-text-section2 {
+    padding-bottom: 0;
+}
+
+.banner-text-bg1 {
+    background-image: url("../images/banner-text-bg2.jpg");
+}
+
+.img-text-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.img-text-img-area img {
+    border-top-right-radius: 50px;
+}
+
+.img-text-content-area {
+    padding: 60px;
+    background: linear-gradient(180deg, rgba(23, 23, 23, 1), rgb(24 188 220) 100%);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-left: -60px;
+}
+
+.img-text-content-title {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.img-text-img-text {
+    margin: 20px 0 0 0;
+    color: var(--white);
+}
+
+.img-text-items-reverse .img-text-img-area img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 50px;
+}
+
+.img-text-items-reverse .img-text-content-area {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    margin-left: 0;
+    margin-right: -60px;
+    position: relative;
+}
+
+.grid-banner-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid-banner-item {
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.grid-banner-item:nth-child(2) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.grid-banner-item:last-child {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.grid-banner-item-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-banner-item-content-wrap {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-banner-item-title {
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.grid-banner-item-text {
+    color: var(--white);
+    margin: 15px 0 0 0;
+}
+
+/* about-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* about section css start */
+    .about-banner-text-section {
+        margin: 60px 0 0 0;
+    }
+
+    /* about section css end */
+}
+
+@media only screen and (max-width:767px) {
+
+    /* about section css start */
+    .about-banner-text-section {
+        margin: 50px 0 0 0;
+    }
+
+    .about-banner-text-section .banner-text-content-wrap {
+        padding: 30px 0;
+    }
+
+    .img-text-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-text-img-area img {
+        border-top-right-radius: 10px;
+        border-radius: 10px;
+    }
+
+    .img-text-content-area {
+        padding: 40px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 90%;
+        margin: -20px auto 0;
+    }
+
+    .img-text-items.img-text-items-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-text-items-reverse .img-text-img-area img {
+        border-radius: 10px;
+    }
+
+    .img-text-items-reverse .img-text-content-area {
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin: -20px auto 0;
+    }
+
+    .grid-banner-items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .grid-banner-item-overlay {
+        padding: 50px 0;
+    }
+
+    /* about section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* about section css start */
+    .img-text-content-area {
+        padding: 24px;
+    }
+
+    .img-text-img-text {
+        margin: 10px 0 0 0;
+    }
+
+    /* about section css end */
+}

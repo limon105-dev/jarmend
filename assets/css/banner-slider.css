@@ -1,0 +1,77 @@
+/* banner section css start */
+.banner-slider-section {
+    margin: 68px 0 0 0;
+}
+
+.slider-banner-item{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-banner-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content-inner {
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.slider-banner-overlay .banner-content {
+    width: 52%;
+    margin: 0 0 100px 0;
+}
+
+.banner-content-heading{
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.banner-content-btn {
+    margin: 12px 0 0 0;
+    display: flex;
+}
+
+.swiper.banner-slider .swiper-pagination .swiper-pagination-bullet{
+    border-color: var(--white);
+}
+
+.swiper.banner-slider .swiper-pagination .swiper-pagination-bullet::after{
+    background-color: var(--white);
+}
+/* banner section css end */
+
+@media only screen and (max-width:767px){
+    /* banner section css start */
+    .banner-slider-section {
+        margin: 58px 0 0 0;
+    }
+
+    .banner-content-inner {
+        height: 550px;
+    }
+
+    .slider-banner-overlay .banner-content {
+        width: 70%;
+        margin: 0 0 80px 0;
+    }
+    /* banner section css end */
+}
+
+@media only screen and (max-width: 575px){
+    /* banner section css start */
+    .banner-content-inner {
+        height: 350px;
+    }
+
+    .slider-banner-overlay .banner-content {
+        width: 90%;
+        margin: 0 0 60px 0;
+    }
+    /* banner section css end */
+}

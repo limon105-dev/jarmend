@@ -1,0 +1,50 @@
+/* topbar-section css start */
+.topbar-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.top-bar {
+    padding: 9px 0;
+    background-color: var(--brand-color);
+}
+
+.top-bar-slider-text {
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.top-bar-slider-text:hover {
+    text-decoration: underline;
+}
+
+.top-bar-slider-text i {
+    font-size: 12px;
+    margin: 0 0 0 5px;
+    transition: ease .3s;
+}
+
+.top-bar-slider-text:hover i {
+    margin: 0 0 0 10px;
+}
+
+/* topbar-section css end */
+
+@media only screen and (max-width: 575px) {
+    /* topbar-section css start */
+    /* topbar-section css end */
+}

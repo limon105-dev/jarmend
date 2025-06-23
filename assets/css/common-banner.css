@@ -1,0 +1,38 @@
+/* common-banner section css start */
+.common-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+.collection-page-banner {
+    background-image: url('../images/common-section-banner.jpg');
+}
+
+.common-banner-content {
+    padding: 100px 0;
+}
+
+.common-banner-content .section-heading-wrapper {
+    margin: 0;
+}
+
+.common-banner-content .section-heading {
+    color: var(--white);
+}
+
+.common-banner .breadcrumb{
+    margin: 10px 0 0 0;
+}
+
+/* common-banner section css end */
+
+@media only screen and (max-width: 575px){
+    /* common-banner css start */
+    .common-banner-content {
+        padding: 50px 0;
+    }
+    /* common-banner css end */
+}
