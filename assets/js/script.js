@@ -26,22 +26,22 @@ $(document).ready(function () {
 		$("body").toggleClass("active");
 	});
 
-	// mobile-dropdown responsive accordion js start--
-	$(".dropdown-sub-menu").slideUp();
 	// **..mobile-dropdown-accordion js start..**
-	$('.dropdown-btn1').on('click', function () {
-		$(this).next(".dropdown-sub-menu1").slideToggle();
+	$(".sidebar-dropdown-sub-menu").slideUp();
+	$('.sidebar-dropdown-btn').on('click', function () {
+		$(this).next(".sidebar-dropdown-sub-menu").slideToggle();
 		$(this).toggleClass('active');
+	});
+
+	$('.sidebar-submenu-open').on('click', function () {
+		$(this).next(".megamenu-wrapper").addClass('active');
+	});
+
+	$('.sidebar-close-btn').on('click', function () {
+		$(this).parent().parent().parent(".megamenu-wrapper").removeClass('active');
 	});
 	// **..mobile-dropdown-accordion js end..**
 
-	// **..mobile-dropdown-accordion js start..**
-	$('.dropdown-btn2').on('click', function () {
-		$(this).next(".dropdown-sub-menu2").slideToggle();
-		$(this).toggleClass('active');
-	});
-	// **..mobile-dropdown-accordion js end..**
-	// mobile-dropdown responsive accordion js end--
 
 	$(".search-bar-open-btn").click(function (event) {
 		event.stopPropagation();
