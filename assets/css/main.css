@@ -1505,6 +1505,7 @@ a.footer-mail {
 
 .nav-icons.footer-icons {
     margin: 16px 0 0 0;
+    display: block;
 }
 
 .nav-icons.footer-icons ul {
