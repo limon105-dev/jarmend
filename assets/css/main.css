@@ -1644,40 +1644,6 @@ a.footer-mail {
         height: 30px;
     }
 
-    /* .nav-icons.desktop-nav-icons {
-        min-width: 137px;
-    }
-
-    .nav-icons.desktop-nav-icons ul {
-        justify-content: flex-end;
-    }
-
-    .nav-icons.mabile-nav-icons {
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
-        border-top: 1px solid var(--white);
-        background-color: var(--brand-color);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .search-bar {
-        height: 80px;
-    }
-
-    .search-close-btn {
-        right: 35px;
-    }
-
-    .search-bar-window-close-btn {
-        top: 80px;
-    } */
-
     /* navbar css end */
 
     /* footer-section css start */
@@ -1933,7 +1899,7 @@ a.footer-mail {
         width: 85px;
     }
 
-    .nav-select-field {
+    .nav-icon-area .nav-select-field {
         display: none;
     }
 
