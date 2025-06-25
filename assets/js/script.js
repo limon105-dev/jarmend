@@ -42,7 +42,6 @@ $(document).ready(function () {
 	});
 	// **..mobile-dropdown-accordion js end..**
 
-
 	$(".search-bar-open-btn").click(function (event) {
 		event.stopPropagation();
 		$(".search-bar").toggleClass("active");
@@ -220,6 +219,41 @@ var swiper = new Swiper(".banner-slider", {
 	},
 });
 // banner slider js end--
+
+// categoryg-slider js start--
+var swiper = new Swiper(".category-slide", {
+	slidesPerView: 5.7,
+	spaceBetween: 40,
+	grabCursor: true,
+	loop: false,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		1: {
+			spaceBetween: 16,
+			slidesPerView: 3.3,
+		},
+		// when window width is >= 576px
+		576: {
+			spaceBetween: 20,
+			slidesPerView: 3.9,
+		},
+		// when window width is >= 767px
+		768: {
+			spaceBetween: 30,
+			slidesPerView: 4.3,
+		},
+		// when window width is >= 993px
+		993: {
+			spaceBetween: 40,
+			slidesPerView: 5.7,
+		}
+	}
+});
+// category-sliderr js end--
 
 // card-img-slider js start--
 var swiper = new Swiper(".card-img-slide", {

@@ -1,10 +1,6 @@
 /* category section css start */
-.category-items {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
+.swiper.card-img-slide .swiper-slide{
+    height: auto;
 }
 
 .category-item-inner {
@@ -92,7 +88,6 @@
     }
 
     .category-item-img {
-        max-width: 80px;
         width: 100%;
         margin: 0 auto;
     }
@@ -102,8 +97,8 @@
     }
 
     .category-item-content-title {
-        font-size: 14px;
-    }
+    font-size: 12px;
+}
 
     /* category section css end */
 }

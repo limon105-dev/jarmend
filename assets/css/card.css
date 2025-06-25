@@ -17,31 +17,25 @@
 	position: relative;
 	width: 100%;
 	background-color: var(--card-bg);
-	border-radius: 10px;
 }
 
 .card-badge {
-	border-radius: 4px;
 	position: absolute;
 	top: 16px;
 	left: 16px;
 	z-index: 1;
-	color: var(--black);
+	color: var(--white);
 	font-family: var(--paragraph-font);
 	font-size: 13px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 1;
 	padding: 5px 8px;
-	background-color: var(--item-bg);
+	background-color: var(--black);
 	text-transform: capitalize;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
 }
 
 .product-card .card-image-wrap:before {
-	padding-bottom: 100%;
+	padding-bottom: 125%;
 	content: "";
 	width: 0;
 	height: 0;
@@ -96,22 +90,30 @@
 
 .product-card .card-content {
 	margin: 16px 0 0 0;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	height: 160px;
 }
 
-.product-card .card-content .card-title,
-.product-card .card-content .card-price-wrap .latest-price,
-.product-card .card-content .card-price-wrap .previous-price {
+.card-content-top {
+	height: 65px;
+	overflow-y: auto;
+	scrollbar-width: none;
+}
+
+.product-card .card-content .card-title {
 	color: var(--paragraph-text-color);
 	font-family: var(--paragraph-font);
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 22px;
+	text-transform: capitalize;
 }
 
 .product-card .card-content .card-title {
 	transition: ease .2s;
-	font-weight: 500;
 	color: var(--heading-text-color);
 }
 
@@ -127,31 +129,73 @@
 .product-card .card-content .card-price-wrap {
 	display: flex;
 	gap: 10px;
-	margin: 6px 0 0 0;
-	justify-content: center;
 	align-items: center;
 }
 
+.product-card .card-content .card-price-wrap .latest-price {
+	color: var(--paragraph-text-color);
+	font-family: var(--paragraph-font);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
 .product-card .card-content .card-price-wrap .previous-price {
+	text-transform: uppercase;
+	font-family: var(--paragraph-font);
+	font-size: 20px;
+	font-weight: 600;
 	color: var(--text-muted);
 	text-decoration: line-through;
+	line-height: 1;
 }
 
 .card-btn {
 	position: absolute;
 	bottom: -100%;
-	left: 0;
-	right: 0;
-	transition: ease .5s;
+	left: 50%;
+	transition: ease .3s;
 	display: flex;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-webkit-transition: ease .3s;
+	-moz-transition: ease .3s;
+	-ms-transition: ease .3s;
+	-o-transition: ease .3s;
 }
 
 .card-btn .btn {
-	width: 100%;
+	background-color: var(--white);
+	color: var(--black);
+	padding: 8px 20px;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
 }
 
 .product-card:hover .card-image-wrap .card-btn {
-	bottom: 0;
+	bottom: 20px;
+}
+
+.card-btm-btn {
+	display: flex;
+	margin: 10px 0 0;
+}
+
+.card-btm-btn .btn {
+	width: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 /* product-card css end */
@@ -159,6 +203,16 @@
 @media only screen and (max-width: 767px) {
 
 	/* product-card css start */
+	.product-card .card-content {
+		gap: 10px;
+		height: 160px;
+	}
+
+	.product-card .card-content .card-title {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
 	.card-btn .btn {
 		padding: 10px;
 		font-size: 14px;
@@ -177,16 +231,31 @@
 @media only screen and (max-width: 575px) {
 
 	/* product-card css start */
-	.product-card .card-image-wrap {
-		border-radius: 6px;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-		-ms-border-radius: 6px;
-		-o-border-radius: 6px;
-}
+	.card-content-top {
+		height: 60px;
+	}
+
+	.product-card .card-content {
+		height: 150px;
+	}
+
+	.product-card .card-content .card-title {
+		text-transform: capitalize;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 400;
+	}
 
 	.product-card .card-content {
 		margin: 10px 0 0 0;
+	}
+
+	.product-card .card-content .card-price-wrap .latest-price {
+		font-size: 16px;
+	}
+
+	.product-card .card-content .card-price-wrap .previous-price {
+		font-size: 16px;
 	}
 
 	.card-btn .btn {
