@@ -89,6 +89,8 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     overflow: hidden;
+    max-height: 150px;
+    background-color: var(--card-bg);
 }
 
 .cart-product-content {
@@ -137,7 +139,7 @@
     margin: 0;
     cursor: pointer;
     background-color: transparent;
-    color: var(--btn-color);
+    color: var(--btn-bg);
     height: 100%;
     padding: 10px 10px;
     transition: ease .3s;

@@ -25,7 +25,7 @@
 }
 
 .breadcrumb li a:hover {
-    color: var(--brand-color);
+    color: var(--hover-color);
 }
 
 .breadcrumb li .active {

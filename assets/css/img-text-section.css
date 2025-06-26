@@ -1,0 +1,113 @@
+/* img-text-section css start */
+.img-text-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.img-text-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-text-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.img-text-item:first-child .img-text-item-content {
+    background-color: var(--item-bg2);
+}
+
+.img-text-item:last-child .img-text-item-content {
+    background-color: var(--item-bg3);
+}
+
+.img-text-item-content-inner {
+    text-align: center;
+}
+
+.img-text-item-content-inner .img-text-item-title {
+    color: var(--white);
+}
+
+.img-text-item-content-inner .btn {
+    margin: 20px 0 0 0;
+}
+
+.img-text-section.img-text-section2 .img-text-items {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    background-color: #1A1E22;
+}
+
+.img-text-section.img-text-section2 .img-text-item {
+    display: flex;
+    align-items: center;
+}
+
+.img-text-section.img-text-section2 .img-text-item .img-text-item-content {
+    width: 57%;
+}
+
+.img-text-section.img-text-section2 .img-text-item .img-text-item-content .img-text-item-content-inner {
+    max-width: 600px;
+    width: 100%;
+}
+
+.img-text-section.img-text-section2 .img-text-item .img-text-item-img {
+    width: 24%;
+}
+
+.img-text-section.img-text-section2 .img-text-items .img-text-item .img-text-item-content {
+    background-color: transparent;
+}
+
+.img-text-section.img-text-section2 .img-text-item .img-text-item-content .img-text-item-content-inner .secondary-btn:hover {
+    border-color: var(--btn-color);
+}
+
+
+/* img-text-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* img-text-section css start */
+    .img-text-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* img-text-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* img-text-section css start */
+    .img-text-items {
+        gap: 16px;
+    }
+
+    .img-text-item-content {
+        padding: 10px;
+    }
+
+    .img-text-item-content-inner .btn {
+        margin: 16px 0 0 0;
+    }
+
+    .img-text-section.img-text-section2 .container {
+        padding: 0;
+    }
+
+    .img-text-section.img-text-section2 .img-text-item .img-text-item-content {
+        width: 50%;
+    }
+
+    .img-text-section.img-text-section2 .img-text-item .img-text-item-img {
+        width: 50%;
+    }
+
+    /* img-text-section css end */
+}

@@ -1,6 +1,5 @@
 .icon-item-section {
     padding: 50px 0;
-    background-color: var(--section-bg);
 }
 
 .icon-items {
@@ -89,6 +88,11 @@
         padding: 30px 0;
     }
 
+    .icon-items {
+        grid-auto-columns: minmax(250px, 250px);
+        grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    }
+
     .icon-item-btn .btn {
         width: 100%;
         padding: 12px 5px;
@@ -98,8 +102,15 @@
         margin: 5px 0 0 0;
     }
 
+    .icon-item-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
     .icon-item-text {
         margin: 5px 0 0 0;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .icon-item-btn {
