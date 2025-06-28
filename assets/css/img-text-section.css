@@ -85,6 +85,10 @@
 @media only screen and (max-width: 575px) {
 
     /* img-text-section css start */
+    .img-text-section .container {
+        padding: 0;
+    }
+
     .img-text-items {
         gap: 16px;
     }

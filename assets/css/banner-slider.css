@@ -1,9 +1,9 @@
 /* banner section css start */
-.banner-slider-section {
-    margin: 68px 0 0 0;
+.swiper.banner-slider {
+    padding: 0 0 30px 0;
 }
 
-.slider-banner-item{
+.slider-banner-item {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,54 +16,59 @@
 }
 
 .banner-content-inner {
-    height: 700px;
+    height: 350px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .slider-banner-overlay .banner-content {
     width: 52%;
-    margin: 0 0 100px 0;
+    text-align: center;
 }
 
-.banner-content-heading{
+.banner-content-heading {
     color: var(--white);
-    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+.banner-content-text {
+    color: var(--white);
+    max-width: 450px;
+    margin: 16px auto 0;
 }
 
 .banner-content-btn {
-    margin: 12px 0 0 0;
+    margin: 16px 0 0 0;
     display: flex;
+    justify-content: center;
 }
 
-.swiper.banner-slider .swiper-pagination .swiper-pagination-bullet{
-    border-color: var(--white);
-}
-
-.swiper.banner-slider .swiper-pagination .swiper-pagination-bullet::after{
-    background-color: var(--white);
-}
 /* banner section css end */
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767px) {
+
     /* banner section css start */
     .banner-slider-section {
-        margin: 58px 0 0 0;
+        padding: 20px 0 0 0;
     }
 
     .banner-content-inner {
-        height: 550px;
+        align-items: flex-end;
+        padding: 0;
     }
 
     .slider-banner-overlay .banner-content {
         width: 70%;
-        margin: 0 0 80px 0;
+        margin: 0 0 70px 0;
     }
+
     /* banner section css end */
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 575px) {
+
     /* banner section css start */
     .banner-content-inner {
         height: 350px;
@@ -71,7 +76,8 @@
 
     .slider-banner-overlay .banner-content {
         width: 90%;
-        margin: 0 0 60px 0;
+        margin: 0 0 50px 0;
     }
+
     /* banner section css end */
 }

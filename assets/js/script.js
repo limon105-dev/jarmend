@@ -204,7 +204,6 @@ var swiper = new Swiper(".banner-slider", {
 	grabCursor: true,
 	loop: true,
 	speed: 1000,
-	effect: "fade",
 	autoplay: {
 		delay: 3500,
 		disableOnInteraction: false,
@@ -221,7 +220,7 @@ var swiper = new Swiper(".banner-slider", {
 // banner slider js end--
 
 // categoryg-slider js start--
-var swiper = new Swiper(".category-slide", {
+var swiper = new Swiper(".category-slide2", {
 	slidesPerView: 5.7,
 	spaceBetween: 40,
 	grabCursor: true,
@@ -234,7 +233,42 @@ var swiper = new Swiper(".category-slide", {
 		// when window width is >= 320px
 		1: {
 			spaceBetween: 16,
-			slidesPerView: 3.3,
+			slidesPerView: 4.5,
+		},
+		// when window width is >= 576px
+		576: {
+			spaceBetween: 20,
+			slidesPerView: 4.5,
+		},
+		// when window width is >= 767px
+		768: {
+			spaceBetween: 30,
+			slidesPerView: 4.5,
+		},
+		// when window width is >= 993px
+		993: {
+			spaceBetween: 40,
+			slidesPerView: 6.7,
+		}
+	}
+});
+// category-sliderr js end--
+
+// categoryg-slider js start--
+var swiper = new Swiper(".category-slide", {
+	slidesPerView: 5.7,
+	spaceBetween: 40,
+	grabCursor: true,
+	loop: false,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		1: {
+			spaceBetween: 20,
+			slidesPerView: 2.5,
 		},
 		// when window width is >= 576px
 		576: {
@@ -266,15 +300,15 @@ var swiper = new Swiper(".card-img-slide", {
 		prevEl: '.swiper-button-prev',
 	},
 	breakpoints: {
-		// when window width is >= 320px
+		// when window width is >= 1px
 		1: {
 			spaceBetween: 10,
-			slidesPerView: 2,
+			slidesPerView: 2.5,
 		},
-		// when window width is >= 576px
+		// when window width is >= 430px
 		576: {
-			spaceBetween: 10,
-			slidesPerView: 2.2,
+			spaceBetween: 20,
+			slidesPerView: 2.5,
 		},
 		// when window width is >= 767px
 		768: {
