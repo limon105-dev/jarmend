@@ -2,6 +2,10 @@
     background-image: url("../images/contact-banner.jpg");
 }
 
+.contact-section .section-heading-wrapper {
+    text-align: center;
+}
+
 .contact-form {
     max-width: 800px;
     margin: 0 auto;

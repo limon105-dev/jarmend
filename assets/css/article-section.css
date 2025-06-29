@@ -1,4 +1,8 @@
 /* article-section css start */
+.article-section .section-heading-wrapper {
+    text-align: center;
+}
+
 .article-section .section-heading {
     color: var(--black);
 }
