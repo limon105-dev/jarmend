@@ -1173,7 +1173,7 @@ button {
 }
 
 .search-input-field {
-    height: 50px;
+    height: 45px;
     max-width: 100%;
     width: 100%;
 }
@@ -1198,7 +1198,7 @@ button {
 
 .search-icon {
     width: 60px;
-    height: 50px;
+    height: 45px;
     border: 1px solid var(--border-color3);
     display: flex;
     justify-content: center;
@@ -1624,7 +1624,7 @@ button {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 45px;
     border: 1px solid var(--border-color3);
     background-color: var(--white);
     border-radius: 5px;
@@ -1678,7 +1678,7 @@ button {
     user-select: none;
     display: block;
     line-height: 18px;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 24px;
 }
 
 .contact-checkbox-field label:before {
@@ -1693,7 +1693,7 @@ button {
     vertical-align: middle;
     cursor: pointer;
     left: 0;
-    top: 0px;
+    top: 5px;
     border-radius: 3px;
 }
 
@@ -1701,8 +1701,8 @@ button {
     content: '';
     display: block;
     position: absolute;
-    top: 3px;
-    left: 7px;
+    top: 7px;
+    left: 6px;
     width: 3px;
     height: 9px;
     border: solid var(--brand-color);
@@ -1760,7 +1760,7 @@ button {
     line-height: 21px;
 }
 
-.footer-text a{
+.footer-text a {
     color: var(--paragraph-text-color);
     text-decoration: underline;
 }
@@ -1966,8 +1966,8 @@ a.footer-mail {
         flex-wrap: wrap;
     }
 
-    .footer-item:first-child {
-        width: 85%;
+    .footer-item:last-child {
+        width: 100%;
         max-width: 100%;
     }
 
@@ -1975,7 +1975,7 @@ a.footer-mail {
         width: 20%;
     }
 
-    .footer-item:last-child {
+    .footer-item:first-child {
         width: 30%;
     }
 
@@ -2053,11 +2053,30 @@ a.footer-mail {
     }
 
     .footer-item {
-        width: 45%;
+        width: 30%;
     }
 
-    .footer-item:last-child {
-        width: 45%;
+    .footer-logo {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-icons.footer-icons ul {
+        justify-content: center;
+    }
+
+    .app-store-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .app-store-link {
+        margin: 0;
     }
 
     .footer-item-title {
@@ -2273,6 +2292,7 @@ a.footer-mail {
 
     .app-store-links {
         margin: 10px 0 0 0;
+        flex-direction: column;
     }
 
     .nav-icons.footer-icons {
