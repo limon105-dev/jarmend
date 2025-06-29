@@ -7,7 +7,7 @@
 }
 
 .pagination a {
-    color: var(--btn-color);
+    color: var(--btn-bg);
     font-size: 16px;
     font-weight: 500;
     font-family: var(--paragraph-font);

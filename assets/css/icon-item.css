@@ -5,7 +5,7 @@
 .icon-items {
     display: grid;
     gap: 40px 20px;
-    justify-content: center;
+    justify-content: space-around;
     grid-template-columns: repeat(3, minmax(250px, 300px));
 }
 

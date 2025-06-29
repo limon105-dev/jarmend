@@ -1594,6 +1594,7 @@ button {
 /* footer-section css start */
 .footer-section {
     padding: 80px 0 0 0;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-items {
@@ -2274,6 +2275,10 @@ a.footer-mail {
     /* navbar css start */
 
     /* footer section css start */
+    .footer-items {
+        gap: 24px;
+    }
+
     .footer-item {
         width: 100%;
     }
