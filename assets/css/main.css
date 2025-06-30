@@ -709,8 +709,11 @@ button {
     margin: 5px 0 0 0;
 }
 
+.side-cart-product-item-wrapper .cart-product-title {
+    font-size: 14px;
+}
+
 .side-cart-product-item-wrapper .cart-product-img {
-    height: 124px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -2142,7 +2145,7 @@ a.footer-mail {
     }
 
     .btn {
-        padding: 10px 24px;
+        padding: 10.5px 24px;
         font-size: 14px;
     }
 
@@ -2195,10 +2198,6 @@ a.footer-mail {
 
     .side-cart-product-item-wrapper .cart-product-table tbody tr td:nth-child(2) {
         display: table-cell;
-    }
-
-    .side-cart-product-item-wrapper .cart-product-img {
-        height: 110px;
     }
 
     .side-cart-product-item-wrapper .cart-product-img {

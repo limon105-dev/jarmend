@@ -125,6 +125,7 @@
 	height: 65px;
 	overflow-y: auto;
 	scrollbar-width: none;
+	text-align: left;
 }
 
 .product-card .card-content .card-title {
@@ -138,7 +139,6 @@
 
 .product-card .card-content .card-title {
 	transition: ease .2s;
-	color: var(--heading-text-color);
 }
 
 .product-card .card-content .card-title:hover {
