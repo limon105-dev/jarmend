@@ -1,12 +1,49 @@
 /* banner section css start */
-.swiper.banner-slider {
-    padding: 0 0 30px 0;
+.hero-banner-wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    height: 560px;
+}
+
+.hero-banner-slider-area {
+    width: 65%;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hero-banner-content-area{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-banner-img-text-item{
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hero-banner-slider-area .swiper.banner-slider {
+    height: 100%;
 }
 
 .slider-banner-item {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero-banner-slider-area .slider-banner-item {
+    height: 100%;
 }
 
 .slider-banner-overlay {
@@ -21,6 +58,19 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+}
+
+.hero-banner-slider-area .banner-content-inner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-banner-slider-area .banner-content-inner .banner-content{
+    text-align: left;
+    padding: 20px;
 }
 
 .slider-banner-overlay .banner-content {
@@ -43,6 +93,10 @@
     margin: 16px 0 0 0;
     display: flex;
     justify-content: center;
+}
+
+.hero-banner-slider-area .banner-content-inner .banner-content-btn {
+    justify-content: flex-start;
 }
 
 /* banner section css end */

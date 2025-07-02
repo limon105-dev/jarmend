@@ -3,10 +3,10 @@
     margin: 0 -20px 0 0;
 }
 
-.category-section2 .category-slider-area {
+/* .category-section2 .category-slider-area {
     padding: 20px 0 0 0;
     border-top: 1px solid var(--border-color);
-}
+} */
 
 .swiper.card-img-slide .swiper-slide {
     height: auto;
