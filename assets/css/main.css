@@ -1627,7 +1627,7 @@ button {
 
 .serach-page-wrapper-inner {
     width: 100%;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 250px);
     overflow-y: auto;
     scrollbar-width: thin;
 }

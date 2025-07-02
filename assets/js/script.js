@@ -464,7 +464,7 @@ progress.addEventListener('input', function () {
 var body = document.querySelector("body");
 var modal = document.querySelector(".serach-page-wrapper-main");
 var modal_open_btn = document.querySelector(".search-page-open-btn");
-var modal_open_btn = document.querySelector(".mobile-search-page-open-btn");
+var mobile_modal_open_btn = document.querySelector(".mobile-search-page-open-btn");
 var modal_closeButton = document.querySelector(".search-page-close-btn");
 
 function openModal() {
@@ -484,6 +484,7 @@ function windowOnClick(event) {
 }
 
 modal_open_btn.addEventListener("click", openModal);
+mobile_modal_open_btn.addEventListener("click", openModal);
 modal_closeButton.addEventListener("click", closeModal);
 window.addEventListener("click", windowOnClick);
 // search page modal js end---
