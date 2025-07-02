@@ -1631,7 +1631,7 @@ button {
 
 .serach-page-wrapper-inner {
     width: 100%;
-    height: calc(100vh - 250px);
+    height: calc(100% - 50px);
     overflow-y: auto;
     scrollbar-width: thin;
 }
@@ -2125,7 +2125,6 @@ a.footer-mail {
     }
 
     .serach-page-wrapper-inner {
-        height: calc(100vh - 226px);
         display: flex;
         flex-direction: column-reverse;
     }
