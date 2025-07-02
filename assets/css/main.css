@@ -2121,7 +2121,7 @@ a.footer-mail {
     }
 
     .serach-page-wrapper-inner {
-        height: calc(100vh - 200px);
+        height: calc(100vh - 226px);
         display: flex;
         flex-direction: column-reverse;
     }
