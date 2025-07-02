@@ -1631,7 +1631,7 @@ button {
 
 .serach-page-wrapper-inner {
     width: 100%;
-    height: calc(100% - 140px);
+    height: calc(100% - 50px);
     overflow-y: auto;
     scrollbar-width: thin;
 }
@@ -2117,6 +2117,11 @@ a.footer-mail {
     /* search-page css star */
     .serach-page-wrapper-main {
         top: 114px;
+        height: calc(100vh - 114px);
+    }
+
+    .serach-page-wrapper-inner {
+        height: calc(100% - 95px);
     }
 
     .serach-page-wrapper-main .container {
