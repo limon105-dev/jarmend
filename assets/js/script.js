@@ -460,5 +460,30 @@ progress.addEventListener('input', function () {
 })
 // progesss-bar js end--
 
-// content animation--
-new WOW().init();
+// search page modal js start---
+var body = document.querySelector("body");
+var modal = document.querySelector(".serach-page-wrapper-main");
+var modal_open_btn = document.querySelector(".search-page-open-btn");
+var modal_open_btn = document.querySelector(".mobile-search-page-open-btn");
+var modal_closeButton = document.querySelector(".search-page-close-btn");
+
+function openModal() {
+	modal.classList.add("show-modal");
+	body.classList.add("active");
+}
+
+function closeModal() {
+	modal.classList.remove("show-modal");
+	body.classList.remove("active");
+}
+
+function windowOnClick(event) {
+	if (event.target === modal) {
+		closeModal();
+	}
+}
+
+modal_open_btn.addEventListener("click", openModal);
+modal_closeButton.addEventListener("click", closeModal);
+window.addEventListener("click", windowOnClick);
+// search page modal js end---
