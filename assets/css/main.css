@@ -1612,6 +1612,10 @@ button {
     visibility: visible;
 }
 
+.serach-page-wrapper-main .container {
+    height: 100%;
+}
+
 .serach-page-wrapper {
     width: 100%;
     height: 100%;
