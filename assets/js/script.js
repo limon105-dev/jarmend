@@ -198,9 +198,9 @@ $(function () {
 var swiper = new Swiper(".top-bar-slider", {
 	slidesPerView: 1,
 	loop: true,
-	speed: 1000,
+	speed: 5000,
 	autoplay: {
-		delay: 3500,
+		delay: 4000,
 		disableOnInteraction: false,
 	}
 });
