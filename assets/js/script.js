@@ -212,17 +212,13 @@ var swiper = new Swiper(".banner-slider", {
 	grabCursor: true,
 	loop: true,
 	speed: 1000,
-	// autoplay: {
-	// 	delay: 3500,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 3500,
+		disableOnInteraction: false,
+	},
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
 	},
 });
 // banner slider js end--
