@@ -2116,7 +2116,6 @@ a.footer-mail {
 
     /* search-page css star */
     .serach-page-wrapper-main {
-        height: calc(100vh - 114px);
         top: 114px;
     }
 
