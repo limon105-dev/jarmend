@@ -434,6 +434,49 @@ var swiper2 = new Swiper(".product-slider", {
 });
 // product-slider js end---
 
+// product-slider js start---
+var swiper = new Swiper(".product-slider-thumb2", {
+	direction: 'vertical',
+	loop: true,
+	spaceBetween: 20,
+	slidesPerView: 5.5,
+	freeMode: true,
+	mousewheel: true,
+	breakpoints: {
+		// when window width is >= 1px
+		1: {
+			direction: 'horizontal',
+			spaceBetween: 10,
+			slidesPerView: 4.4,
+		},
+		// when window width is >= 576px
+		576: {
+			direction: 'horizontal',
+			spaceBetween: 20,
+			slidesPerView: 5.3,
+		},
+		// when window width is >= 767px
+		768: {
+			direction: 'vertical',
+			spaceBetween: 20,
+			slidesPerView: 5.5,
+		}
+	}
+});
+var swiper2 = new Swiper(".product-slider2", {
+	loop: true,
+	autoHeight: true,
+	spaceBetween: 10,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper: swiper,
+	},
+});
+// product-slider js end---
+
 // side-cart-slider js start--
 var swiper = new Swiper(".side-cart-slider", {
 	slidesPerView: 2.2,
