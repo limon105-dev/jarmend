@@ -144,6 +144,29 @@ $(document).ready(function () {
 	});
 	// --tab js end--
 
+	// product-sidebar js start ---
+	$(".product-sidebar-btn").click(function (event) {
+		event.stopPropagation();
+		$(this).next().toggleClass("active");
+		$(this).next().find(".product-sidebar").toggleClass("active");
+		$("body").toggleClass("active");
+	});
+
+	$(".product-sidebar-window-btn").click(function (event) {
+		event.stopPropagation();
+		$(this).parent().toggleClass("active");
+		$(this).next().toggleClass("active");
+		$("body").toggleClass("active");
+	});
+
+	$(".product-sidebar-close-btn").click(function (event) {
+		event.stopPropagation();
+		$(this).parent().parent().parent().removeClass("active");
+		$(this).parent().parent().removeClass("active");
+		$("body").removeClass("active");
+	});
+	// product-sidebar js end ---
+
 })
 
 // btn js ---
@@ -455,8 +478,14 @@ var swiper = new Swiper(".product-slider-thumb2", {
 			spaceBetween: 20,
 			slidesPerView: 5.3,
 		},
-		// when window width is >= 767px
+		// when window width is >= 768px
 		768: {
+			direction: 'horizontal',
+			spaceBetween: 20,
+			slidesPerView: 5.5,
+		},
+		// when window width is >= 993px
+		993: {
 			direction: 'vertical',
 			spaceBetween: 20,
 			slidesPerView: 5.5,
