@@ -105,6 +105,16 @@
     background-color: var(--card-bg);
 }
 
+.swiper.product-slider2 .swiper-slide {
+    height: 600px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.product-section2 .product-slider2  .product-slider-img {
+    height: auto;
+}
+
 .product-section2 .product-content-area {
     width: 40%;
 }
